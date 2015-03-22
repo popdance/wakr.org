@@ -8,11 +8,11 @@ description: "Chrome WebStore에 Installable Packaged App을 개발하여 발행
 published: true
 ---
 
-# **Packaged App의 Chrome Web Store 발행기**
+## **Packaged App의 Chrome Web Store 발행기**
 
 ---
 
-##[개요]
+### [개요]
 
 **0.목표**
 
@@ -26,12 +26,12 @@ published: true
 
 ---
 
-##0. 목표
+### 0. 목표
 WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 
 ---
 
-##1. WebApp 형태 알아보기 
+### 1. WebApp 형태 알아보기
 
 - **Server-based WebApp**
 : OAuth 2.0 등으로 Server에서 보호/처리되는 Resource를 접근하여 서비스를 제공하는 방식
@@ -44,14 +44,14 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 
 ---
 
-##2. WebApp 형태 선택하기
+### 2. WebApp 형태 선택하기
 대부분의 방식으로 Chrome WebStore에서 발행 할 수 있으나, 다음과 같은 기술과 도구를 적용해보고자 Packaged App 방식으로 선택하게 되었다. 특히, Chrome 내부 API를 사용하여 배포하기 위해서는 CSP를 반드시 적용해야 함을 잊지말자.
 
 - App 배포
   : [ [CRX Package Format](https://developer.chrome.com/extensions/crx) ]
 
 - WebComponents 사용
-  : [ [W3C WebComponents Intro](http://www.w3.org/TR/components-intro/) ] 
+  : [ [W3C WebComponents Intro](http://www.w3.org/TR/components-intro/) ]
   : [ [WebComponents.org](http://webcomponents.org/) ]
 
 - **Manifest For Packaged App**
@@ -75,14 +75,14 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 
 - Chrome Apps & Extensions Developer Tool 사용
   : [ [Install Page](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc) ]
-   
+
 - **기능 추가 및 성능 향상을 위한 Chrome API 도입**
   : [ [Chrome Javascript API](https://developer.chrome.com/extensions/api_index) ]
   : [ [Chrome Web API](https://developer.chrome.com/extensions/api_other)]
 
 ---
 
-##3. 개발목표 정하기
+### 3. 개발목표 정하기
 현재 직장에서 반복되는 작업 중 웹기술을 이용하면 금방 적용이 가능한 App을 만들기로 생각했으며 다음과 같은 결정하였다.
 
 **[개발목표]**
@@ -108,7 +108,7 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 
 ---
 
-##4. 개발에 필요한 것 Research
+### 4. 개발에 필요한 것 Research
 
 **[ 사용할 Javascript Library ]**
 
@@ -131,7 +131,7 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 마지막으로 개발환경을 결정해야했다. 다음과 같이 결정하였다.
 
 - Brakcet 사용 [ [Homepage](http://brackets.io/) ]
-  : git/nodejs 등 plugin 풍부하며, web 개발 지원이 양호함 
+  : git/nodejs 등 plugin 풍부하며, web 개발 지원이 양호함
 
 - Chrome dev tool 사용 - Chrome 기본 포함
   : App Runtime debugging을 위해 사용
@@ -141,6 +141,3 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 
 - Chrome Apps & Extensions Developer Tool 사용 [ [Install Page](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc) ]
   : Chrome Extension 개발(디버깅 등)을 지원하며, CRX로 패키징하는 것을 지원한다.
-
-
-
