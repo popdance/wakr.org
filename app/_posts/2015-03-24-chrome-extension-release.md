@@ -34,6 +34,7 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 ### 1. WebApp 형태 알아보기
 
 - **Server-based WebApp**
+
 OAuth 2.0 등으로 Server에서 보호/처리되는 Resource를 접근하여 서비스를 제공하는 방식
 
 - **Browser-based WebApp**
