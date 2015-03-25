@@ -33,53 +33,52 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 
 ### 1. WebApp 형태 알아보기
 
-- **Server-based WebApp**
-
+**Server-based WebApp**
 OAuth 2.0 등으로 Server에서 보호/처리되는 Resource를 접근하여 서비스를 제공하는 방식
 
-- **Browser-based WebApp**
-: Javasciprt Library 등을 이용하여, 모던 브라우저 상에서 사용자에게 서비스를 제공하는 방식
+**Browser-based WebApp**
+Javasciprt Library 등을 이용하여, 모던 브라우저 상에서 사용자에게 서비스를 제공하는 방식
 
-- **Chrome App and Extension**
-: chrome의 내부정의 API를 이용하여 서비스할 수 있으며, Install이 가능한 Packaged App을 지원
+**Chrome App and Extension**
+chrome의 내부정의 API를 이용하여 서비스할 수 있으며, Install이 가능한 Packaged App을 지원
 
 ---
 
 ### 2. WebApp 형태 선택하기
 대부분의 방식으로 Chrome WebStore에서 발행 할 수 있으나, 다음과 같은 기술과 도구를 적용해보고자 Packaged App 방식으로 선택하게 되었다. 특히, Chrome 내부 API를 사용하여 배포하기 위해서는 CSP를 반드시 적용해야 함을 잊지말자.
 
-- App 배포
-  : [ [CRX Package Format](https://developer.chrome.com/extensions/crx) ]
+**WebApp 배포**
+[ [CRX Package Format](https://developer.chrome.com/extensions/crx) ]
 
-- WebComponents 사용
-  : [ [W3C WebComponents Intro](http://www.w3.org/TR/components-intro/) ]
-  : [ [WebComponents.org](http://webcomponents.org/) ]
+**WebComponents 사용**
+[ [W3C WebComponents Intro](http://www.w3.org/TR/components-intro/) ]
+[ [WebComponents.org](http://webcomponents.org/) ]
 
-- **Manifest For Packaged App**
-  : [ [W3C Web Applications manifest](https://w3c.github.io/manifest/) ]
-  : [ [Chrome Manifest ](https://developer.chrome.com/extensions/manifest) ]
-  : [ [Mozilla Manifest](https://developer.mozilla.org/en-US/Marketplace/Options/Packaged_apps) ]
+**Manifest For Packaged App**
+[ [W3C Web Applications manifest](https://w3c.github.io/manifest/) ]
+[ [Chrome Manifest ](https://developer.chrome.com/extensions/manifest) ]
+[ [Mozilla Manifest](https://developer.mozilla.org/en-US/Marketplace/Options/Packaged_apps) ]
 
-- **Content Security Policy For Packaged App**
-  : [ [W3C CSP2](http://www.w3.org/TR/CSP2/) ]
-  : [ [Chrome CSP](https://developer.chrome.com/extensions/contentSecurityPolicy) ]
-  : [ [Mozilla CSP](https://developer.mozilla.org/ko/docs/Security/CSP) ]
+**Content Security Policy For Packaged App**
+[ [W3C CSP2](http://www.w3.org/TR/CSP2/) ]
+[ [Chrome CSP](https://developer.chrome.com/extensions/contentSecurityPolicy) ]
+[ [Mozilla CSP](https://developer.mozilla.org/ko/docs/Security/CSP) ]
 
-- Chrome App Launcher
-  : [ [Chrome App Launcher](https://chrome.google.com/webstore/launcher) ]
+**Chrome App Launcher**
+[ [Chrome App Launcher](https://chrome.google.com/webstore/launcher) ]
 
-- Polymer 적용
-  : [ [Polymer Home](https://www.polymer-project.org/0.5/) ]
+**Polymer 적용**
+[ [Polymer Home](https://www.polymer-project.org/0.5/) ]
 
-- Chrome Dev Editor 사용
-  : [ [Install Page](https://chrome.google.com/webstore/detail/chrome-dev-editor-develop/pnoffddplpippgcfjdhbmhkofpnaalpg) ]
+**Chrome Dev Editor 사용**
+[ [Install Page](https://chrome.google.com/webstore/detail/chrome-dev-editor-develop/pnoffddplpippgcfjdhbmhkofpnaalpg) ]
 
-- Chrome Apps & Extensions Developer Tool 사용
-  : [ [Install Page](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc) ]
+**Chrome Apps & Extensions Developer Tool 사용**
+[ [Install Page](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc) ]
 
-- **기능 추가 및 성능 향상을 위한 Chrome API 도입**
-  : [ [Chrome Javascript API](https://developer.chrome.com/extensions/api_index) ]
-  : [ [Chrome Web API](https://developer.chrome.com/extensions/api_other)]
+**기능 추가 및 성능 향상을 위한 Chrome API 도입**
+[ [Chrome Javascript API](https://developer.chrome.com/extensions/api_index) ]
+[ [Chrome Web API](https://developer.chrome.com/extensions/api_other)]
 
 ---
 
