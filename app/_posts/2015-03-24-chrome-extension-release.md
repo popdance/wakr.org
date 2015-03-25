@@ -34,12 +34,15 @@ WebApp을 만들어 WebStore에 발행하는 Cycle을 익혀보자!
 ### 1. WebApp 형태 알아보기
 
 **Server-based WebApp**
+
 OAuth 2.0 등으로 Server에서 보호/처리되는 Resource를 접근하여 서비스를 제공하는 방식
 
 **Browser-based WebApp**
+
 Javasciprt Library 등을 이용하여, 모던 브라우저 상에서 사용자에게 서비스를 제공하는 방식
 
 **Chrome App and Extension**
+
 chrome의 내부정의 API를 이용하여 서비스할 수 있으며, Install이 가능한 Packaged App을 지원
 
 ---
